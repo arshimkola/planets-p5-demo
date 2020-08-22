@@ -34,3 +34,13 @@ See demo on youtube
 
 [Demo Video](https://www.youtube.com/watch?v=dV3O32WkF1A)
 
+## What's next?
+
+1. Look to draw the orbits in 3-D with different angles and planes 
+
+2. Use actual distance from sun
+
+3. Draw satellite objects around the planets
+
+4. Use p5 physics with gravity vs drawing ellipses - oooh!
+

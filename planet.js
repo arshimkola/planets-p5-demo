@@ -51,9 +51,10 @@ function setup() {
 function draw() {
   background(0);
   fill(255);
-  stroke(255, 240+random(15), 240+random(15));
   for(let i=0;i<500;i++){
+  	stroke(255, 240+random(15), 240+random(15));
   	point(starsX[i],starsY[i]);
+
   }
   noStroke();
   drawSun();
@@ -69,7 +70,7 @@ function drawSun(){
 	let sH = h * .12;
 	fill('yellow');
 	stroke(255, 204, 0);
- 	circle(displayWidth/2,displayHeight/2,sW,sH);
+ 	ellipse(displayWidth/2,displayHeight/2,sW,sW);
  	noFill();
 	noStroke();
 
@@ -77,7 +78,7 @@ function drawSun(){
 	 	fill('black');
 	    sunSpotX=displayWidth/2 + (sW/2 * cos(sunSpotTheta));
 	    sunSpotY=displayHeight/2 + (sH/2 * sin(sunSpotTheta));
-	 	circle(sunSpotX, sunSpotY, 2);
+	 	circle(sunSpotX, sunSpotY, 4);
 	 	noFill();
  	}
 
@@ -99,7 +100,7 @@ function drawPlanets(){
 	    planetsX[i]=displayWidth/2 + (sW+planetsxR[i]) * cos(planetsTheta[i]);
 	    planetsY[i]=displayHeight/2 + (sH+planetsyR[i]) * sin(planetsTheta[i]);
 		fill(planetColours[i]);
-	 	circle(planetsX[i],planetsY[i],planetsSize[i],planetsSize[i]);
+	 	ellipse(planetsX[i],planetsY[i],planetsSize[i],planetsSize[i]);
 	 	noFill();
 
 
@@ -107,5 +108,7 @@ function drawPlanets(){
 	 	if(planetsTheta[i] > 360){
 	 		planetsTheta[i] = 0;
 	 	}
+
+
    }
 }
