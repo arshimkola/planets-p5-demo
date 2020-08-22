@@ -5,6 +5,10 @@ A simple planets simulation in p5 with Simran to show how to code
 
 1. Install node & npm 
 
+```
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+```
+
 2. Install node HTTP Server
 
 ```
