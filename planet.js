@@ -7,12 +7,6 @@ let sunSpotY=0;
 let sunSpotTheta = 0;
 
 
-let mX=0;
-let mY=0;
-let mxR =  w * .30;
-let myR =  h * .20;
-let mTheta = 0;
-
 
 let planetsX=[0,0,0,0,0,0,0,0];
 let planetsY=[0,0,0,0,0,0,0,0];
@@ -63,7 +57,6 @@ function draw() {
   }
   noStroke();
   drawSun();
-  drawMercury();
   drawPlanets();
 }
 
@@ -96,20 +89,7 @@ function drawSun(){
 }
 
 
-
-function drawMercury(){
-    mX=displayWidth/2 + mxR * cos(mTheta);
-    mY=displayHeight/2 + myR * sin(mTheta);
-	fill('red');
- 	circle(mX,mY,10,10);
- 	noFill();
-
- 	mTheta++;
- 	if(mTheta > 360){
- 		mTheta = 0;
- 	}
-}
-
+ 
 
 function drawPlanets(){
   let sW = w * .10;
