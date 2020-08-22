@@ -23,3 +23,5 @@ http-server -c-1 -p 3000 --cors
 ```
 
 5. Start your fav browser and go to `http://localhost:3000`
+
+![Solar System](samplerun.png)
